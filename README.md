@@ -1,16 +1,16 @@
 # Company Coach **Cleaning Data**
 
-### Sumber data
+### **Sumber data**
 Data yang digunakan adalah data invoice perusahaan. Data ini terdiri dari 1712 dan terdiri dari kolom **id_order, id_produk, nama_produk, kategori_produk, tanggal_pembelian, kuantitas, total_harga, PPN, bayar_cash, metode_bayar**
 
-### Study Case 
+### **Study Case**
 Proyek ini berfokus pada **proses pembersihan data** dari data invoice untuk memastikan data yang digunakan dalam analisis dan pengembangan model prediksi berada dalam kondisi **bersih, konsisten, dan siap digunakan**.
 
 
-### Tahap
-1. Import dan Load Dataset <br>
+### **Tahap**
+1. **Import dan Load Dataset** <br>
 Dataset dibaca dari file Dataset dengan menggunakan pandas.
-2. Explorasi Awal <br>
+2. **Explorasi Awal** <br>
 Menggunakan df.head(), df.info(), dan df.describe() untuk melihat struktur dan ringkasan data.
 3. Pembersihan Nilai Hilang <br> 
 Mengisi missing values pada kolom kuantitas dan total_harga dengan nilai median (edian tidak terpengaruh outlier). Kolom PPN diisi dengan nilai tetap 0.1, kemungkinan karena itu adalah nilai pajak default.
@@ -49,10 +49,11 @@ Untuk mendukung pengambilan keputusan, dilakukan **pengembangan model prediksi**
 
 ### Hasil 
 1. Scatter Plot antara penjualan diebetasol coklat dengan total penjualan harian
-![Image](https://github.com/user-attachments/assets/5a3fce56-7347-4e8a-8408-aca4082514c1)
+![Image](https://github.com/user-attachments/assets/5a3fce56-7347-4e8a-8408-aca4082514c1) <br>
 Plot tersebut menunjukkan **penjualan diabetasol coklat memiliki korelasi positif dengan penjualan harian. Yang dapat disimpulkan semakin tinggi penjualan produk tersebut maka semakin tinggi pula total penjualan harian. berdasarkan plot ini Produk Diabetasol Coklat memliki pengaruh besar terhadap total penjualan harian, sehingga jika promo difokuskan pada produk ini dapat berdampak signifikan pada peningkatan penjualan.**
-2. Perbandingan antara data aktual dan data prediksi
-![Image](https://github.com/user-attachments/assets/4d35063d-d4a6-44eb-b04c-05476f72e47b)
+
+2. Perbandingan antara data aktual dan data prediksi<br>
+![Image](https://github.com/user-attachments/assets/4d35063d-d4a6-44eb-b04c-05476f72e47b) <br>
 Grafik tersebut menunjukkan **Model prediksi telah memprediksi data dengan benar.**
 3. Mean Squared Error (MSE), Intercept, Coefficient
 Mean Squared Error: 5646943705294.958 <br>
